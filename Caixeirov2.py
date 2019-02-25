@@ -4,10 +4,10 @@ from time import time
 
 
 #   Parametros Usados
-N_CIDADES = 30                      #Numero de Cidades
+N_CIDADES = 10                      #Numero de Cidades
 COOR_CIDADES = [[0, 0]] * N_CIDADES    #Cordenadas das cidades
 CIDADE_DE_PARTIDA = 0
-TAM_POPULACAO = 2000
+TAM_POPULACAO = 1000
 MAX_GERACAO = 100
 N_CRIAR = 20
 TAXA = 1                           #taxa de mutacao
@@ -18,10 +18,10 @@ DIC["permutacao"] = TAM_POPULACAO - sum(DIC.values())
 
 print(DIC.values())
 
-f = lambda x: random.randint(-100, 100)
+f = lambda x: random.randint(-10000, 10000)
 for i in range(N_CIDADES):
     k = int(N_CIDADES / 2) - N_CIDADES + i
-    COOR_CIDADES[i] = [k, f(k)]
+    COOR_CIDADES[i] = [k * 100, f(k)]
 #COOR_CIDADES = [[-5, 11], [-4, -67], [-3, -38], [-2, -96], [-1, 36], [0, -74], [1, 29], [2, 98], [3, 49], [4, -23]]
 print(COOR_CIDADES)
 
