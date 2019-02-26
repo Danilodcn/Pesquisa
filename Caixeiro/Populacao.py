@@ -6,7 +6,6 @@ from Caixeiro.funcoes import insertionSort as ordenar, mostraPopulacao
 class Populacao:
     def __init__(self, tam = TAM):
         self.membros = [Individuo() for i in range(tam)]
-        self.geraAleatoriamente()
 
     def __len__(self): return len(self.membros)
 
@@ -37,6 +36,8 @@ class Populacao:
 
     def mostraPopulacao(self): mostraPopulacao(self)
 
+    def add(self, o): self.membros.append(o)
+
 
 
 
@@ -45,6 +46,7 @@ class Populacao:
 
 if __name__ == "__main__":
     p = Populacao()
+    p.geraAleatoriamente()
     print(p)
     p.ordena()
     p.mostraPopulacao()
