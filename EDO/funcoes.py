@@ -1,0 +1,6 @@
+
+
+
+def derivada(I, n):
+
+

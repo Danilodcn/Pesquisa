@@ -1,7 +1,10 @@
-from math import hypot, exp
+from math import hypot, exp, sin, cos
+import matplotlib.pyplot as plt
+from random import randint
 
 distancia = lambda p1, p2: hypot((p1[0] - p2[0]), (p1[1] - p2[1]))
-f = lambda x: exp(x)
+f = lambda : randint(-100, 100)
+g = lambda : randint(-100, 100)
 
 def distanciaTotal(coor, seq):
     s = 0
@@ -13,9 +16,9 @@ def distanciaTotal(coor, seq):
 
 def geraCoordenadas(n):
     coor = [(0, 0)] * n
-    for i in range(n):
+    for i in range(1, n + 1):
         k = int(n / 2) - n + i
-        coor[k] = [k, f(k)]
+        coor[k-1] = [g(), f()]
     return coor
 
 def insertionSort(args):
@@ -38,3 +41,17 @@ def mostraPopulacao(p):
     for i in range(int(len(p) * 0.9), len(p)):
         a = p.getMembro(i)
         print("{}\t{}\t{}".format(i, a.cromossomo, a.aptidao()))
+
+
+def plotar(seq, coor):
+    x, y  = [], []
+    for k in seq[:-1]:
+        i, j = coor[k]
+        x.append(i); y.append(j)
+    x.append(x[0])
+    y.append(y[0])
+    plt.plot(x, y, 'go')  # green bolinha
+    plt.plot(x, y, 'k:', color='orange')  # linha pontilha orange
+
+    plt.grid(True)
+    plt.show()

@@ -61,7 +61,6 @@ class Individuo:
 
         for i in range(len(adj)): adj[i].sort()
 
-        for i in range(tam): print(adj[i])
         cid_corrente = p1[0]; ja_usadas =[]
         while len(ja_usadas) < tam:
             ja_usadas.append(cid_corrente)
@@ -120,4 +119,7 @@ if __name__ == "__main__":
     print(i2, i2.mutacao())
     print(i3, i3.mutacao())
 
-
+    print("#" * 200)
+    ir = Individuo()
+    ir.crossover(Individuo())
+    print(ir)
