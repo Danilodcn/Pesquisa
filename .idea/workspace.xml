@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6b195cf8-2412-4df4-949c-37027cea4320" name="Default Changelist" comment="">
+    <list default="true" id="6b195cf8-2412-4df4-949c-37027cea4320" name="Default Changelist" comment="crossover completo">
+      <change afterPath="$PROJECT_DIR$/Caixeiro/Populacao.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Caixeiro/Individuo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caixeiro/Individuo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Caixeiro/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caixeiro/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Caixeiro/constantes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caixeiro/constantes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Caixeiro/funcoes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caixeiro/funcoes.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,10 +23,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Caixeirov2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="148" column="19" lean-forward="true" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
+            <state relative-caret-position="550">
+              <caret line="213" column="28" selection-start-line="213" selection-start-column="28" selection-end-line="213" selection-end-column="28" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+                <element signature="e#1904#5633#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Caixeiro/Populacao.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,10 +48,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Caixeiro/Individuo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+            <state relative-caret-position="34">
+              <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
               <folding>
                 <element signature="e#1#34#0" expanded="true" />
+                <element signature="e#1383#2895#0" />
               </folding>
             </state>
           </provider>
@@ -43,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Caixeiro/constantes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            <state relative-caret-position="85">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -52,8 +70,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Caixeiro/funcoes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="88">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -83,11 +101,12 @@
         <option value="$PROJECT_DIR$/testes/plot.py" />
         <option value="$PROJECT_DIR$/testes/metodo.py" />
         <option value="$PROJECT_DIR$/Caixeiro/__init__().py" />
-        <option value="$PROJECT_DIR$/Caixeiro/__init__.py" />
         <option value="$PROJECT_DIR$/Caixeirov2.py" />
         <option value="$PROJECT_DIR$/Caixeiro/constantes.py" />
+        <option value="$PROJECT_DIR$/Caixeiro/__init__.py" />
         <option value="$PROJECT_DIR$/Caixeiro/funcoes.py" />
         <option value="$PROJECT_DIR$/Caixeiro/Individuo.py" />
+        <option value="$PROJECT_DIR$/Caixeiro/Populacao.py" />
       </list>
     </option>
   </component>
@@ -198,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Individuo">
+  <component name="RunManager" selected="Python.Populacao">
     <configuration name="Caixeirov2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Projetos Pycharm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -220,27 +239,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Cixeirov2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Projetos Pycharm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python/Cixeirov2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Individuo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Projetos Pycharm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,6 +252,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Caixeiro/Individuo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Populacao" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Projetos Pycharm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Caixeiro" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Caixeiro/Populacao.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -306,11 +325,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Populacao" />
         <item itemvalue="Python.Individuo" />
         <item itemvalue="Python.Caixeirov2" />
         <item itemvalue="Python.metodo" />
         <item itemvalue="Python.plot" />
-        <item itemvalue="Python.Cixeirov2" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +373,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551150514479</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="crossover completo">
+      <created>1551158046410</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1551158046411</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -403,17 +429,8 @@
     <MESSAGE value="Primeira hora programando" />
     <MESSAGE value="seegunda hora programando" />
     <MESSAGE value="antes de comecar o crossover" />
-    <option name="LAST_COMMIT_MESSAGE" value="antes de comecar o crossover" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Caixeiro/funcoes.py</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="crossover completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="crossover completo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1247971764/builtins.py">
@@ -475,13 +492,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Caixeiro/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="48" lean-forward="true" selection-start-column="48" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1185461562/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -489,36 +499,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Caixeirov2.py">
+    <entry file="file://$PROJECT_DIR$/Caixeiro/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="148" column="19" lean-forward="true" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Caixeiro/constantes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Caixeiro/funcoes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="88">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Caixeirov2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="213" column="28" selection-start-line="213" selection-start-column="28" selection-end-line="213" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#1904#5633#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Caixeiro/Populacao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Caixeiro/Individuo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+        <state relative-caret-position="34">
+          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
           <folding>
             <element signature="e#1#34#0" expanded="true" />
+            <element signature="e#1383#2895#0" />
           </folding>
         </state>
       </provider>

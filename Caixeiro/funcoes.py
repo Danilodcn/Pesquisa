@@ -1,7 +1,7 @@
-from math import hypot
+from math import hypot, exp
 
 distancia = lambda p1, p2: hypot((p1[0] - p2[0]), (p1[1] - p2[1]))
-f = lambda x: abs(x)
+f = lambda x: exp(x)
 
 def distanciaTotal(coor, seq):
     s = 0
@@ -28,3 +28,13 @@ def insertionSort(args):
             i = i - 1
         args[i+1] = x
     return args
+
+def mostraPopulacao(p):
+    print("\t\t\tPOPULACAO ORDENADA\n")
+    print("n\t\t\tCromossomo\t\t\t\t\tAptidao\n")
+    for i in range(int(len(p) * 0), int(len(p) * 0.1)):
+        a = p.getMembro(i)
+        print("{}\t{}\t{}".format(i, a.cromossomo, a.aptidao()))
+    for i in range(int(len(p) * 0.9), len(p)):
+        a = p.getMembro(i)
+        print("{}\t{}\t{}".format(i, a.cromossomo, a.aptidao()))

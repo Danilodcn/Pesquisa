@@ -1,7 +1,7 @@
 
 from Caixeiro.constantes import *
 from Caixeiro.funcoes import *
-from random import sample, choice
+from random import sample
 
 class Individuo:
     def __init__(self, ini = CIDADE_PARTIDA, n = N_CIDADES):
@@ -9,10 +9,11 @@ class Individuo:
         self.n = n - 1
         self.partida = ini
         self.geraCromossomo()
+        self.E = 1
 
     def __len__(self): return len(self.cromossomo) - 1
 
-    def __repr__(self): return "Individuo: {}".format(self.cromossomo)
+    def __repr__(self): return "Individuo: {} {}".format(self.cromossomo, self.aptidao())
 
     def getGene(self, i): return self.cromossomo[i]
 
@@ -37,10 +38,11 @@ class Individuo:
     def copy(self):
         f = Individuo(self.partida, self.n)
         f.setCromossomo(self.cromossomo)
+        return f
 
     def objetivo(self): return distanciaTotal(COORDENADAS, self.getCromossomo())
 
-    def aptidao(self): return self.objetivo()
+    def aptidao(self): return self.objetivo() * self.E
 
     def crossover(self, other): return self.edgeRecombination(other)
 
@@ -82,6 +84,19 @@ class Individuo:
         filho.setCromossomo(ja_usadas + [self.partida])
         return filho
 
+    def mutacao(self):
+        melhor = self
+        cro = self.getCromossomo()
+        for i in range(1, len(cro)-1):
+            for j in range(1, len(cro)-1):
+                if i != j:
+                    x, y = cro[i], cro[j]
+                    f = self.copy()
+                    f.setGene(x, j)
+                    f.setGene(y, i)
+                    if f.aptidao() < melhor.aptidao():
+                        melhor = f.copy()
+        return melhor
 
 
 
@@ -100,9 +115,9 @@ if __name__ == "__main__":
     i1 = Individuo(); i2 = Individuo()
     i2.permutacao(); i1.permutacao()
     i3 = i1.crossover(i2)
-    print(i1)
-    print(i2)
-    print(i3)
 
+    print(i1, i1.mutacao())
+    print(i2, i2.mutacao())
+    print(i3, i3.mutacao())
 
 

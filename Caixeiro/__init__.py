@@ -1,1 +1,1 @@
-__all__ = ["constantes", "funcoes", "Individuo"]
+__all__ = ["constantes", "funcoes", "Individuo", "Populacao"]
