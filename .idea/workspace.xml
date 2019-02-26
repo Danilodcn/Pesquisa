@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b195cf8-2412-4df4-949c-37027cea4320" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Caixeiro/Individuo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Caixeiro/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Caixeiro/constantes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Caixeiro/funcoes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Caixeirov2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caixeirov2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Caixeiro/Individuo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caixeiro/Individuo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Caixeiro/funcoes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caixeiro/funcoes.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Caixeirov2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+            <state relative-caret-position="272">
+              <caret line="148" column="19" lean-forward="true" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -32,23 +28,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Caixeiro/Individuo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+            <state relative-caret-position="314">
+              <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
               <folding>
                 <element signature="e#1#34#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1185461562/builtins.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="769" column="8" selection-start-line="769" selection-start-column="8" selection-end-line="769" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -65,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Caixeiro/funcoes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+            <state relative-caret-position="348">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -81,6 +68,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Danilo Nascimento &lt;daconnas.dcn@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -90,12 +82,12 @@
         <option value="$PROJECT_DIR$/Python/Cixeirov2.py" />
         <option value="$PROJECT_DIR$/testes/plot.py" />
         <option value="$PROJECT_DIR$/testes/metodo.py" />
-        <option value="$PROJECT_DIR$/Caixeiro/funcoes.py" />
         <option value="$PROJECT_DIR$/Caixeiro/__init__().py" />
         <option value="$PROJECT_DIR$/Caixeiro/__init__.py" />
         <option value="$PROJECT_DIR$/Caixeirov2.py" />
         <option value="$PROJECT_DIR$/Caixeiro/constantes.py" />
         <option value="$PROJECT_DIR$/Caixeiro/Individuo.py" />
+        <option value="$PROJECT_DIR$/Caixeiro/funcoes.py" />
       </list>
     </option>
   </component>
@@ -334,6 +326,14 @@
       <updated>1549734174094</updated>
       <workItem from="1549734183723" duration="150000" />
     </task>
+    <task id="LOCAL-00001" summary="Primeira hora programando">
+      <created>1551135847278</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1551135847279</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -350,13 +350,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="-1" width="1372" height="748" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.37428573" visible="true" weight="0.24422933" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.6257143" side_tool="true" visible="true" weight="0.24422933" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3747412" visible="true" weight="0.24422933" />
+      <window_info id="Structure" order="1" sideWeight="0.6252588" side_tool="true" visible="true" weight="0.24422933" />
       <window_info id="Favorites" order="2" sideWeight="0.50119334" side_tool="true" weight="0.24422933" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996277" visible="true" weight="0.43729904" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996277" visible="true" weight="0.22347267" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,6 +377,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primeira hora programando" />
+    <option name="LAST_COMMIT_MESSAGE" value="Primeira hora programando" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -454,17 +459,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Caixeiro/funcoes.py">
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1185461562/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="57">
+          <caret line="769" column="8" selection-start-line="769" selection-start-column="8" selection-end-line="769" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Caixeirov2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="90" column="12" selection-start-line="90" selection-start-column="12" selection-end-line="90" selection-end-column="12" />
+        <state relative-caret-position="272">
+          <caret line="148" column="19" lean-forward="true" selection-start-line="148" selection-start-column="19" selection-end-line="148" selection-end-column="19" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -478,20 +483,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Caixeiro/Individuo.py">
+    <entry file="file://$PROJECT_DIR$/Caixeiro/funcoes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding>
-            <element signature="e#1#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="348">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/1185461562/builtins.py">
+    <entry file="file://$PROJECT_DIR$/Caixeiro/Individuo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="769" column="8" selection-start-line="769" selection-start-column="8" selection-end-line="769" selection-end-column="8" />
+        <state relative-caret-position="314">
+          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+          <folding>
+            <element signature="e#1#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
