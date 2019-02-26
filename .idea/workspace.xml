@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b195cf8-2412-4df4-949c-37027cea4320" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Caixeiro/Individuo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caixeiro/Individuo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Caixeiro/funcoes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Caixeiro/funcoes.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Caixeiro/Individuo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+            <state relative-caret-position="850">
+              <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
               <folding>
                 <element signature="e#1#34#0" expanded="true" />
               </folding>
@@ -52,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Caixeiro/funcoes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
+            <state relative-caret-position="433">
               <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/Caixeiro/__init__.py" />
         <option value="$PROJECT_DIR$/Caixeirov2.py" />
         <option value="$PROJECT_DIR$/Caixeiro/constantes.py" />
-        <option value="$PROJECT_DIR$/Caixeiro/Individuo.py" />
         <option value="$PROJECT_DIR$/Caixeiro/funcoes.py" />
+        <option value="$PROJECT_DIR$/Caixeiro/Individuo.py" />
       </list>
     </option>
   </component>
@@ -333,7 +333,28 @@
       <option name="project" value="LOCAL" />
       <updated>1551135847279</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Primeira hora programando">
+      <created>1551139277703</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551139277704</updated>
+    </task>
+    <task id="LOCAL-00003" summary="seegunda hora programando">
+      <created>1551139298111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1551139298111</updated>
+    </task>
+    <task id="LOCAL-00004" summary="antes de comecar o crossover">
+      <created>1551150514479</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1551150514479</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -352,18 +373,18 @@
     <frame x="-3" y="-1" width="1372" height="748" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3747412" visible="true" weight="0.24422933" />
-      <window_info id="Structure" order="1" sideWeight="0.6252588" side_tool="true" visible="true" weight="0.24422933" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.37317073" visible="true" weight="0.24422933" />
+      <window_info id="Structure" order="1" sideWeight="0.62682927" side_tool="true" visible="true" weight="0.24422933" />
       <window_info id="Favorites" order="2" sideWeight="0.50119334" side_tool="true" weight="0.24422933" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996277" visible="true" weight="0.22347267" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996277" visible="true" weight="0.34083602" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32744783" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329582" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003723" side_tool="true" weight="0.44783306" />
       <window_info anchor="bottom" id="Terminal" order="11" side_tool="true" weight="0.32905295" />
@@ -380,7 +401,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primeira hora programando" />
-    <option name="LAST_COMMIT_MESSAGE" value="Primeira hora programando" />
+    <MESSAGE value="seegunda hora programando" />
+    <MESSAGE value="antes de comecar o crossover" />
+    <option name="LAST_COMMIT_MESSAGE" value="antes de comecar o crossover" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -485,15 +508,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Caixeiro/funcoes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
+        <state relative-caret-position="433">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Caixeiro/Individuo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
+        <state relative-caret-position="850">
+          <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
           <folding>
             <element signature="e#1#34#0" expanded="true" />
           </folding>
