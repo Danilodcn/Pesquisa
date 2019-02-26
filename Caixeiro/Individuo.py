@@ -6,8 +6,9 @@ from random import sample
 class Individuo:
     def __init__(self, ini = CIDADE_PARTIDA, n = N_CIDADES):
         self.cromossomo = []
-        self.n = n
+        self.n = n - 1
         self.partida = ini
+        self.geraCromossomo()
 
     def __len__(self): return len(self.cromossomo)
 
@@ -25,14 +26,21 @@ class Individuo:
 
     def geraCromossomo(self):
         l = []
-        for i in range(self.n):
+        for i in range(self.n+1):
             if i != self.partida: l.append(i)
         self.cromossomo = [self.partida] + l + [self.partida]
-        self.n -= 1
 
     def permutacao(self):
-        l = sample(self.getGenes(1, self.n+1), self.n)
+        l = sample(self.getGenes(1, self.n+1), len(self)-2)
         self.cromossomo = [self.partida] + l + [self.partida]
+
+    def copy(self):
+        f = Individuo(self.partida, self.n)
+        f.setCromossomo(self.cromossomo)
+
+    def objetivo(self): return distanciaTotal(COORDENADAS, self.getCromossomo())
+
+    def aptidao(self): return self.objetivo()
 
 
 
@@ -53,11 +61,12 @@ class Individuo:
 
 
 if __name__ == "__main__":
+    COORDENADAS = [[-5, 5], [-4, 4], [-3, 3], [-2, 2], [-1, 1], [0, 0], [1, 1], [2, 2], [3, 3], [4, 4]]
+    print(COORDENADAS)
     i = Individuo()
-    i.geraCromossomo()
-    print(i)
+    print(i, i.objetivo())
     i.permutacao()
-    print(i.getGenes(0, 2), i)
+    print(i.getGenes(0, 2), i, i.objetivo())
 
 
 
