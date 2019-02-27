@@ -1,6 +1,10 @@
+try:
+    from Caixeiro.constantes import *
+    from Caixeiro.funcoes import *
+except:
+    from constantes import *
+    from funcoes import *
 
-from Caixeiro.constantes import *
-from Caixeiro.funcoes import *
 from random import sample
 
 class Individuo:
@@ -87,7 +91,7 @@ class Individuo:
         melhor = self
         cro = self.getCromossomo()
         for i in range(1, len(cro)-1):
-            for j in range(1, len(cro)-1):
+            for j in range(i+1, len(cro)-1):    #hjhjhjdhjd
                 if i != j:
                     x, y = cro[i], cro[j]
                     f = self.copy()

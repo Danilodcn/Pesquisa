@@ -4,10 +4,10 @@ from time import time
 
 
 #   Parametros Usados
-N_CIDADES = 10                      #Numero de Cidades
+N_CIDADES = 20                      #Numero de Cidades
 COOR_CIDADES = [[0, 0]] * N_CIDADES    #Cordenadas das cidades
-CIDADE_DE_PARTIDA = 0
-TAM_POPULACAO = 1000
+CIDADE_DE_PARTIDA = 3
+TAM_POPULACAO = 100
 MAX_GERACAO = 100
 N_CRIAR = 20
 TAXA = 1                           #taxa de mutacao
@@ -24,6 +24,8 @@ for i in range(N_CIDADES):
     COOR_CIDADES[i] = [k * 100, f(k)]
 #COOR_CIDADES = [[-5, 11], [-4, -67], [-3, -38], [-2, -96], [-1, 36], [0, -74], [1, 29], [2, 98], [3, 49], [4, -23]]
 print(COOR_CIDADES)
+
+COOR_CIDADES = [[1, -54], [2, 78], [3, 18], [4, 69], [5, 51], [6, 41], [7, 59], [8, 91], [9, 42], [10, 86], [-9, 58], [-8, 55], [-7, 79], [-6, 48], [-5, 8], [-4, 76], [-3, 40], [-2, 96], [-1, 5], [0, -76]]
 
 
 distancia = lambda x1, y1, x2, y2: ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5

@@ -1,9 +1,9 @@
 from math import hypot, exp, sin, cos
 import matplotlib.pyplot as plt
-from random import randint
+from random import randint, triangular
 
 distancia = lambda p1, p2: hypot((p1[0] - p2[0]), (p1[1] - p2[1]))
-f = lambda : randint(-100, 100)
+f = lambda : triangular(-100, 100)
 g = lambda : randint(-100, 100)
 
 def distanciaTotal(coor, seq):
@@ -11,14 +11,14 @@ def distanciaTotal(coor, seq):
     for i in range(len(seq)):
         if i == len(seq) - 1: break
         j, k = seq[i], seq[i+1]
-        s += distancia(coor[j], coor[k])
+        s = s + distancia(coor[j], coor[k])
     return s
 
 def geraCoordenadas(n):
     coor = [(0, 0)] * n
-    for i in range(1, n + 1):
+    for i in range(0, n ):
         k = int(n / 2) - n + i
-        coor[k-1] = [g(), f()]
+        coor[i] = [i, f()]
     return coor
 
 def insertionSort(args):
@@ -35,10 +35,10 @@ def insertionSort(args):
 def mostraPopulacao(p):
     print("\t\t\tPOPULACAO ORDENADA\n")
     print("n\t\t\tCromossomo\t\t\t\t\tAptidao\n")
-    for i in range(int(len(p) * 0), int(len(p) * 0.1)):
+    for i in range(int(len(p) * 0), int(len(p) * 0.02)):
         a = p.getMembro(i)
         print("{}\t{}\t{}".format(i, a.cromossomo, a.aptidao()))
-    for i in range(int(len(p) * 0.9), len(p)):
+    for i in range(int(len(p) * 0.98), len(p)):
         a = p.getMembro(i)
         print("{}\t{}\t{}".format(i, a.cromossomo, a.aptidao()))
 

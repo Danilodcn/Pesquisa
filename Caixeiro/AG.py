@@ -1,8 +1,14 @@
-from Caixeiro.Populacao import Populacao
-from Caixeiro.constantes import *
-from random import sample
-from Caixeiro.funcoes import plotar
+try:
+    from Caixeiro.Populacao import Populacao
+    from Caixeiro.constantes import *
+    from Caixeiro.funcoes import plotar
+except:
+    from Populacao import Populacao
+    from constantes import *
+    from funcoes import plotar
 
+from random import sample
+from time import time
 
 class AG:
     def __init__(self):
@@ -11,10 +17,15 @@ class AG:
         self.populacao.geraAleatoriamente()
         self.minimo = self.menor()
         self.mudouMenor = 0
-
+        self.duracao = 0
+        print(self.minimo, self.n, self.mudouMenor)
+        t0 = time()
         while self.n <= 100 and self.mudouMenor < MUDANCA_MENOR:
-            print(self.minimo, self.n, self.mudouMenor)
             self.proximaGeracao()
+            t1 = time()
+            self.duracao += t1 - t0
+            print(self.minimo, self.n, self.mudouMenor, t1 - t0)
+            t0 = t1
 
     def menor(self): return self.populacao.menor()
 
@@ -44,7 +55,7 @@ class AG:
 
 if __name__ == "__main__":
     g = AG()
-    print(g.minimo)
+    print(g.minimo, "Duracao: {}".format(g.duracao))
     g.populacao.ordena()
     g.populacao.mostraPopulacao()
     plotar(g.minimo.cromossomo, COORDENADAS)

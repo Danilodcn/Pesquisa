@@ -1,11 +1,19 @@
-from Caixeiro.Individuo import Individuo
-from Caixeiro.constantes import TAM_POPULACAO as TAM
+try:
+    from Caixeiro.Individuo import Individuo
+    from Caixeiro.constantes import TAM_POPULACAO as TAM
+    from Caixeiro.funcoes import insertionSort as ordenar, mostraPopulacao
+except:
+    from Individuo import Individuo
+    from constantes import TAM_POPULACAO as TAM
+    from funcoes import insertionSort as ordenar, mostraPopulacao
+
 from random import sample
-from Caixeiro.funcoes import insertionSort as ordenar, mostraPopulacao
+
 
 class Populacao:
-    def __init__(self, tam = TAM):
+    def __init__(self, tam=TAM):
         self.membros = [Individuo() for i in range(tam)]
+        self.somaAvalicao = 0
 
     def __len__(self): return len(self.membros)
 
@@ -13,9 +21,14 @@ class Populacao:
 
     def getMembro(self, i): return self.membros[i]
 
-    def setMembro(self, o, i): self.membros[i] = o
+    def setMembro(self, o, i):
+        self.somaAvalicao += o.aptidao() - self.membros[i].aptidao()
+        self.membros[i] = o
 
-    def setMembros(self, lista): self.membros = lista.copy()
+    def setMembros(self, lista):
+        self.somaAvalicao = 0
+        for i in lista: self.somaAvalicao += i.aptidao()
+        self.membros = lista.copy()
 
     def menor(self):
         m = self.getMembro(0)
@@ -25,7 +38,10 @@ class Populacao:
         return m
 
     def geraAleatoriamente(self):
-        for i in range(len(self)): self.membros[i].permutacao()
+        for i in range(len(self)):
+            self.somaAvalicao -= self.membros[i].aptidao()
+            self.membros[i].permutacao()
+            self.somaAvalicao += self.membros[i].aptidao()
 
     def selecaoTorneio(self, n=2):
         seq = sample(self.membros, n)
@@ -36,7 +52,9 @@ class Populacao:
 
     def mostraPopulacao(self): mostraPopulacao(self)
 
-    def add(self, o): self.membros.append(o)
+    def add(self, o):
+        self.somaAvalicao += o.aptidao()
+        self.membros.append(o)
 
 
 
